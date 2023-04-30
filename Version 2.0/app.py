@@ -65,4 +65,7 @@ class Footer:
 layout["Header"].update(Header())
 layout["Footer"].update(Footer())
 
+import weather as weather_file
+layout["Right_upper"].update(weather_file)
+
 print(layout)
