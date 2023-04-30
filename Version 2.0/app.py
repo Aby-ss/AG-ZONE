@@ -26,12 +26,16 @@ layout.split_column(
         Layout(name = "Footer")
         )
 
-layout["Body"].split_column(
-        Layout(name = "Upper_Body"),
-        Layout(name = "Lower_Body")
+layout["Body"].split_row(
+        Layout(name = "Right"),
+        Layout(name = "Left", size = 77)
         )
-layout["Upper_Body"].split_row(Layout(name = "UB1"), Layout(name = "UB2"))
-layout["Lower_Body"].split_row(Layout(name = "LB1"), Layout(name = "LB2"))
+layout["Right"].split_column(
+    Layout(name = "Right_upper"),
+    Layout(name = "Right_lower")
+
+)
+
 layout["Header"].size = 3
 layout["Footer"].size = 3
 
