@@ -33,7 +33,6 @@ layout["Body"].split_row(
 layout["Right"].split_column(
     Layout(name = "Right_upper"),
     Layout(name = "Right_lower")
-
 )
 
 layout["Header"].size = 3
@@ -65,7 +64,8 @@ class Footer:
 layout["Header"].update(Header())
 layout["Footer"].update(Footer())
 
-import weather as weather_file
-layout["Right_upper"].update(weather_file)
+from weather import weather
+layout["Right_upper"].update(weather())
+layout["Right_upper"].size = 7
 
 print(layout)
