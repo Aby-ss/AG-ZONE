@@ -14,7 +14,7 @@ from Main_Win import Ui_Main_Screen
 
 
 class Ui_logIn_screen(object):
-    def func(self):
+    def func(self): 
         
         pass_path = "C:\\Users\\hadir\\Documents\\VSC - Projects\\Business Class Year 10B 💼\\python\\logIn_Details.txt"
         username_inputed = self.username_field.text()
