@@ -35,6 +35,12 @@ layout["Right"].split_column(
     Layout(name = "Right_lower")
 )
 
+layout["Right_lower"].split_column(
+    Layout(name = "RL1"),
+    Layout(name = "RL2")
+
+)
+
 layout["Header"].size = 3
 layout["Footer"].size = 3
 
