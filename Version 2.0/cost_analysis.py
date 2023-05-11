@@ -32,17 +32,6 @@ def get_crop_prices(crop_name):
                 return float(price)
     return None
 
-
-# Function to calculate cost of production for a farmer
-def calculate_cost_of_production(crop, area):
-    # Assume the cost of production is 60% of the crop price
-    crop_info = get_crop_info(crop)
-    crop_price = get_crop_prices(crop)
-    if crop_info and crop_price:
-        cost_of_production = 0.6 * crop_price * area
-        return cost_of_production
-    return None
-
 # Main function to display cost analysis for a farmer
 def display_cost_analysis():
     console = Console()
@@ -75,6 +64,18 @@ def display_cost_analysis():
                 table.add_row(crop_name, str(area), f"${crop_price:.2f}", f"${costs_of_production[i]:.2f}")
     
     console.print(table)
+
+
+# Function to calculate cost of production for a farmer
+def calculate_cost_of_production(crop, area):
+    # Assume the cost of production is 60% of the crop price
+    crop_info = get_crop_info(crop)
+    crop_price = get_crop_prices(crop)
+    if crop_info and crop_price:
+        cost_of_production = 0.6 * crop_price * area
+        return cost_of_production
+    return None
+
 
 # Run the main function
 if __name__ == "__main__":
