@@ -32,6 +32,7 @@ def get_crop_prices(crop_name):
                 return float(price)
     return None
 
+
 # Function to calculate cost of production for a farmer
 def calculate_cost_of_production(crop, area):
     # Assume the cost of production is 60% of the crop price
