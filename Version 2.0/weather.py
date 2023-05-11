@@ -2,6 +2,7 @@ import json
 import requests
 from rich import print
 from rich.panel import Panel
+from rich import box
 
 # ---------------------------- -- - -         WORK IN PROGRESS        - -- - ----------------------------
 
@@ -38,5 +39,5 @@ def weather():
         
             loop_weather_info = f" [bold red]Temperature[/bold red] (in kelvin unit) = {str(loop_current_temperature)} \n [bold red]atmospheric pressure[/bold red] (in hPa unit) =  {str(loop_current_pressure)} \n [bold red]humidity[/bold red] (in percentage) =  {str(loop_current_humidity)} \n [bold red]description[/bold red] =  {str(loop_weather_description)}"
             
-            return Panel(f"{loop_weather_info}", title = f"{i}", border_style = "green")
+            return Panel(f"{loop_weather_info}", title = f"{i}", border_style = "bold white", box = box.SQUARE)
     
