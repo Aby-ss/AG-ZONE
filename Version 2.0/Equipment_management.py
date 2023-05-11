@@ -29,3 +29,5 @@ def equip_management():
     for row in data.values.tolist():
         EDB_table.add_row(*row)
     return Panel(EDB_table, title = "Equipment Database", title_align = "left", style = "Bold White")
+
+equip_management()
