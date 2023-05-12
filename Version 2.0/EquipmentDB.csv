@@ -1,6 +1,6 @@
-Equipment,Model No.,Amount,Price Currently,Inventory
-Soil Fertilizer,None,None,None,Low
-Soil,None,None,None,Medium
-Digging Tools,None,None,None,Full
-Seeds,None,None,None,Full
-Pots and Containers,None,None,None,Medium
+Equipment,Model No.,Amount,Price,Inventory
+Soil Fertilizer,AB-6GDC,60-kg,AED-120,Low
+Soil,DG-JHV67,100-kg,AED-34,Medium
+Digging Tools,BF-875G,30-A+,AED-50,Full
+Seeds,HD-765G,30-g,AED-150,Full
+Pots and Containers,TOP-G99,10-C+,AED-190,Medium
