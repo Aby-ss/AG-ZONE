@@ -1,6 +1,10 @@
 Equipment,Model No.,Amount,Price,Inventory
-Soil Fertilizer,AB-6GDC,60-kg,AED-120,Low
-Soil,DG-JHV67,100-kg,AED-34,Medium
-Digging Tools,BF-875G,30-A+,AED-50,Full
-Seeds,HD-765G,30-g,AED-150,Full
-Pots and Containers,TOP-G99,10-C+,AED-190,Medium
+Soil Fertilizer,AB-6GDC,60-kg,-AED120,Low
+Soil,DG-JHV67,100-kg,-AED34,Medium
+Digging Tools,BF-875G,30-A+,-AED50,Full
+Seeds,HD-765G,30-g,-AED150,Full
+Pots and Containers,TOP-G99,10-C+,-AED190,Medium
+Harvesting tools,PO-876,35-A+,-AED180,Medium
+Harvesting machinery,YG-8766,7-B+,-AED207,Full
+Land,YG-765,19-A+,-AED232,Medium
+Pesticides,HI-6758,23-C-,-AED257,Full
