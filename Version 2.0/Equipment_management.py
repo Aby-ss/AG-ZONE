@@ -9,7 +9,7 @@ def Equip_man():
     data = pd.read_csv("C:\\Users\\hadir\\Documents\\VSC - Projects\\Python\\AG-ZONE\\Version 2.0\\EquipmentDB.csv")
 
     # Create a Rich table object
-    table = Table(title="My CSV Data")
+    table = Table(title="Equipment Management")
 
     # Add header to the table
     for col in data.columns:
@@ -23,4 +23,4 @@ def Equip_man():
     console = Console()
 
     # Print the table to the console
-    return Panel(f"{table}", border_style = "Bold white", box = box.SQUARE)
+    return table
