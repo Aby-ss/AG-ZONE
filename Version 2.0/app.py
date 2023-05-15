@@ -67,11 +67,18 @@ class Footer:
         return Panel(f_grid, style = "Bold white on black")
 
 
+
 layout["Header"].update(Header())
 layout["Footer"].update(Footer())
 
 from weather import weather
 layout["Right_upper"].update(weather())
 layout["Right_upper"].size = 7
+
+from Equipment_management import Equip_man
+layout["RL1"].update(Equip_man())
+
+from Irrigation_planner import Irrigat_plan
+layout["RL2"].update(Irrigat_plan())
 
 print(layout)
