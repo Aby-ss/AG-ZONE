@@ -1,3 +1,5 @@
+from rich.panel import Panel
+from rich import box
 from rich.console import Console
 from rich.table import Table
 import pandas as pd
@@ -21,4 +23,4 @@ def Equip_man():
     console = Console()
 
     # Print the table to the console
-    return table
+    return Panel(f"{table}", border_style = "Bold white", box = box.SQUARE)

@@ -1,5 +1,8 @@
+from rich.panel import Panel
+from rich import box
 from rich.console import Console
 from rich.table import Table
+import pandas as pd
 
 def Irrigat_plan():
     # Create a console object to output the results
@@ -38,4 +41,4 @@ def Irrigat_plan():
         schedule_table.add_row(*schedule_row)
 
     # Print the irrigation schedule
-    return schedule_table
+    return Panel(f"{schedule_table}", border_style = "Bold white", box = box.SQUARE)
