@@ -41,4 +41,4 @@ def Irrigat_plan():
         schedule_table.add_row(*schedule_row)
 
     # Print the irrigation schedule
-    return Panel(f"{schedule_table}", border_style = "Bold white", box = box.SQUARE)
+    return schedule_table
