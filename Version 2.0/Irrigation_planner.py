@@ -14,9 +14,11 @@ def Irrigat_plan():
     schedule_table.add_column("Zone 1")
     schedule_table.add_column("Zone 2")
     schedule_table.add_column("Zone 3")
+    schedule_table.add_column("Zone 4")
+    schedule_table.add_column("Zone 5")
 
     # Define the irrigation zones and their watering requirements (in minutes)
-    zones = {"Zone 1": 20, "Zone 2": 30, "Zone 3": 40}
+    zones = {"Zone 1": 20, "Zone 2": 30, "Zone 3": 40, "Zone 4": 50, "Zone 5": 60}
 
     # Define the available watering times (in minutes)
     watering_times = [15, 30, 45, 60]
@@ -26,7 +28,7 @@ def Irrigat_plan():
     watering_frequency = int(input("Enter the desired watering frequency (in days): "))
 
     # Calculate the daily water requirement (in liters) based on the lawn area
-    water_requirement = lawn_area * 4
+    water_requirement = lawn_area * 6
 
     # Calculate the watering time (in minutes) for each zone based on the water requirement and the zone's watering requirement
     zone_watering_times = {}
