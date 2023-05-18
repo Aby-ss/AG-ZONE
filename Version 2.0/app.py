@@ -30,6 +30,12 @@ layout["Body"].split_row(
         Layout(name = "Right"),
         Layout(name = "Left", size = 77)
         )
+
+layout["Left"].split_column(
+    Layout(name = "Left_Upper", size = 7),
+    Layout(name = "Left_Lower")
+)
+
 layout["Right"].split_column(
     Layout(name = "Right_upper"),
     Layout(name = "Right_lower")
@@ -80,5 +86,8 @@ layout["RL1"].update(Equip_man())
 
 from Irrigation_planner import Irrigat_plan
 layout["RL2"].update(Irrigat_plan())
+
+from yield_forcasting import yield_forecast
+layout["Left_Upper"].update(yield_forecast())
 
 print(layout)

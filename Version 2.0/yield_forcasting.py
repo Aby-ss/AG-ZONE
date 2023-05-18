@@ -29,27 +29,27 @@ def calculate_yield(field_size, rainfall, temperature):
 
     return temperature_yield
 
+def yield_forecast():
+    # Get input from the user
+    field_size = float(input("Enter the size of the field (in acres): "))
+    rainfall = float(input("Enter the average annual rainfall (in mm): "))
 
-# Get input from the user
-field_size = float(input("Enter the size of the field (in acres): "))
-rainfall = float(input("Enter the average annual rainfall (in mm): "))
+    # Fetch temperature data from an API
+    response = requests.get("https://api.openweathermap.org/data/2.5/weather?q=London,uk")
+    weather_data = response.json()
+    temperature = weather_data.get("main", {}).get("temp", 0) - 273.15  # Convert temperature from Kelvin to Celsius
 
-# Fetch temperature data from an API
-response = requests.get("https://api.openweathermap.org/data/2.5/weather?q=London,uk")
-weather_data = response.json()
-temperature = weather_data.get("main", {}).get("temp", 0) - 273.15  # Convert temperature from Kelvin to Celsius
+    # Calculate the potential yield
+    potential_yield = calculate_yield(field_size, rainfall, temperature)
 
-# Calculate the potential yield
-potential_yield = calculate_yield(field_size, rainfall, temperature)
+    # Create a console object
+    console = Console()
 
-# Create a console object
-console = Console()
-
-# Display the potential yield in a panel
-yield_panel = Panel.fit(
-    f"The potential yield for a field of [bold]{field_size:.2f}[/bold] acres is [bold]{potential_yield:.2f}[/bold] tons.",
-    title="Yield Forecast",
-    border_style="green",
-    padding=(1, 2),
-)
-console.print(yield_panel)
+    # Display the potential yield in a panel
+    yield_panel = Panel.fit(
+        f"The potential yield for a field of [bold]{field_size:.2f}[/bold] acres is [bold]{potential_yield:.2f}[/bold] tons.",
+        title="Yield Forecast",
+        border_style="green",
+        padding=(1, 2),
+    )
+    return yield_panel
