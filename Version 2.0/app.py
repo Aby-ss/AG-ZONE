@@ -28,7 +28,7 @@ layout.split_column(
 
 layout["Body"].split_row(
         Layout(name = "Right"),
-        Layout(name = "Left", size = 77)
+        Layout(name = "Left", size = 86)
         )
 
 layout["Left"].split_column(
