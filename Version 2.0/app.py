@@ -32,7 +32,7 @@ layout["Body"].split_row(
         )
 
 layout["Left"].split_column(
-    Layout(name = "Left_Upper", size = 7),
+    Layout(name = "Left_Upper", size = 5),
     Layout(name = "Left_Lower")
 )
 

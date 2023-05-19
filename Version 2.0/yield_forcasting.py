@@ -2,6 +2,7 @@ import random
 import requests
 from rich.console import Console
 from rich.panel import Panel
+from rich import box
 
 # Function to calculate potential yield based on field and weather factors
 def calculate_yield(field_size, rainfall, temperature):
@@ -49,7 +50,8 @@ def yield_forecast():
     yield_panel = Panel.fit(
         f"The potential yield for a field of [bold]{field_size:.2f}[/bold] acres is [bold]{potential_yield:.2f}[/bold] tons.",
         title="Yield Forecast",
-        border_style="green",
+        border_style="bold green",
         padding=(1, 2),
+        box = box.SQUARE
     )
     return yield_panel
