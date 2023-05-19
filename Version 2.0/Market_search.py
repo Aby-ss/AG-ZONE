@@ -112,4 +112,5 @@ def population_growth():
     population_growth_panel = Panel(f"{population_growth_panel_content}", title="Population Growth")
     print(population_growth_panel)
     
+    
 population_growth()
