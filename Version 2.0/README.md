@@ -1,15 +1,13 @@
 **The capabilities of the application will depend on the specific needs and goals of your business. However, as a farm planning software, some potential capabilities of the application could include:**
 
-- [ ]  **Field mapping and boundary tracking 🌆**
-- [ ]  **Soil analysis and nutrient management 💩**
-- [ ]  **Crop selection and rotation planning 🌿**
-- [ ]  **Irrigation planning and scheduling 🚿**
-- [ ]  **Weather monitoring and forecasting ☁🌡**
-- [ ]  **Pest and disease management 🦡**
-- [ ]  **Yield forecasting and analysis 📊**
-- [ ]  **Resource allocation and cost analysis 📉📩**
-- [ ]  **Equipment tracking and management 🗜**
-- [ ]  **Integration with other farm management systems and technologies 💻🏗**
+- [x]  **Soil analysis and nutrient management 💩**
+- [x]  **Crop selection and rotation planning 🌿**
+- [x]  **Irrigation planning and scheduling 🚿**
+- [x]  **Weather monitoring and forecasting ☁🌡**
+- [x]  **Pest and disease management 🦡**
+- [x]  **Yield forecasting and analysis 📊**
+- [x]  **Resource allocation and cost analysis 📉📩**
+- [x]  **Equipment tracking and management 🗜**
 
 **These are just a few potential capabilities that the application could have, and the specific features would depend on the needs and goals of your business and the target market.**
 
