@@ -2,8 +2,13 @@ import requests
 from rich import print, box
 from rich.panel import Panel
 from datetime import datetime
+from rich.console import Console
 from rich.traceback import install
 install(show_locals=True)
+
+from bs4 import BeautifulSoup
+
+console = Console()
 
 # Define the commodities and their seasonal demand
 commodities = {
@@ -92,25 +97,3 @@ for i in city_names:
 
 
 print(Panel(f"{weather_panel_content}", title = "Weather Data", title_align = "center", border_style = "bold white", box = box.SQUARE))
-
-
-def population_growth():
-
-    # Define additional factors for market research
-    additional_factors = {
-        "Population Growth": {
-            "API_URL": "https://api.worldbank.org/v2/countries/USA/indicators/SP.POP.TOTL?format=json",
-        },
-    }
-
-    # Population Growth Panel
-    population_data = requests.get(additional_factors["Population Growth"]["API_URL"])
-    population_json = population_data.json()
-    population_indicator = population_json[1][0]["indicator"]["value"]
-    population_value = population_json[1][0]["value"]
-    population_growth_panel_content = f"Indicator: {population_indicator}\nValue: {population_value}"
-    population_growth_panel = Panel(f"{population_growth_panel_content}", title="Population Growth")
-    print(population_growth_panel)
-    
-    
-population_growth()
